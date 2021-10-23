@@ -1,0 +1,603 @@
+@charset "UTF-8";
+
+#chartdiv{
+
+   width:300px;
+   height:300px;
+   position:absolute;
+   transform:translate(10%, 10%);
+   
+  
+}
+
+#modal1{
+	
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	width:800px;
+	height:300px;
+	z-index: 700;
+	border: 2px solid #f6f8f8;
+	background-color:#FFFFFF;
+	
+	
+}
+
+
+
+#mainPop{
+	position:fixed; z-index:1;
+	left:0px; top:0px; width:100%; height:100%;
+	overflow:auto;
+	background-color:rgba(051,051,153,0.5);
+	display:none;
+}
+#popUp{
+	background-color :#fefefe;
+	margin:15% auto; padding:2px;
+	width:40%;
+	text-align:center;
+}
+#modal2{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	width:800px;
+	height:300px;
+	z-index: 700;
+	border: 2px solid #f6f8f8;
+	background-color:#FFFFFF;
+	
+}
+
+#btnSearch{
+	
+	text-align:center;
+	margin-left: 350px;
+}
+
+#selectBack{
+	
+	width:100%;
+	height:100%;
+
+}
+
+#SSC{
+
+	border-top:2px solid #f6f8f8;
+	font-family:Sans-Serif;
+	color:#c0c5cd;
+
+	
+
+	
+}
+
+#SSC:hover{ color:black; }
+
+#selectStep{
+       
+	   border:2px solid #f6f8f8;
+	   border-top: 4px solid black;
+	  
+	
+}
+
+#selHeight{
+         
+         height:100px;
+         padding-top:20px;
+         text-align: center;
+         font-family:Sans-Serif;
+         font-size:40px;
+         font-weight:bold;
+         color:#4f5f86;
+         
+}
+
+#span1{
+    margin-left:100px;
+	font-weight:bold;
+}
+#span2{
+	 margin-left:220px;
+	font-weight:bold;
+}
+#span3{
+	margin-left:230px;
+	font-weight:bold;
+}
+
+
+#scstate{
+	
+   position:relative;
+  width:200px;
+   left:248px;
+  
+}
+
+#scname{
+
+	  position:relative;
+	  	width:400px;
+	  left:240px;
+}
+
+#sccount{
+	
+	  position:relative;
+	  width:200px; left:105px;
+}
+
+#modal_background {
+	display: none;
+	position : absolute;
+	width: 100%;
+	height:100%;
+	background-color :rgba(0,0,0,0.7);
+	top:0; left:0; z-index:1;
+}
+
+#modal_background2 {
+	display: none;
+	position : absolute;
+	width: 100%;
+	height:100%;
+	background-color :rgba(0,0,0,0.7);
+	top:0; left:0; z-index:1;
+}
+#modal_background3 {
+	display: none;
+	position : absolute;
+	width: 100%;
+	height:100%;
+	background-color :rgba(0,0,0,0.7);
+	top:0; left:0; z-index:1;
+}
+
+
+#modal_box {
+	display: none;
+	position : absolute;
+	top : 50%; left : 50%;
+	width: 600px; height: 600px;
+	margin : -250px 0 0 -250px;
+	background-color :rgb(255,255,255);
+	border-radius: 5px;
+	z-index : 2;
+	overflow:scroll;
+}
+
+#modal_box2 {
+	display: none;
+	position : absolute;
+	top : 50%; left : 50%;
+	width: 400px; height: auto;
+	margin : -250px 0 0 -250px;
+	background-color :rgb(255,255,255);
+	border-radius: 5px;
+	z-index : 2;
+	overflow:scroll;
+}
+#modal_box3 {
+	display: none;
+	position : absolute;
+	top : 50%; left : 50%;
+	width: 600px; height: 600px;
+	margin : -250px 0 0 -250px;
+	background-color :rgb(255,255,255);
+	border-radius: 5px;
+	z-index : 2;
+}
+.steplists{
+	overflow:hidden;
+	color: #929192;
+}
+.steplists:hover{
+	overflow:hidden;
+	color: black;
+}
+#stnames{text-align:center; float:left;  width:300px; }
+#psnames{text-align:left; float:left; margin-left:200px;  width:200px; }
+#numbers{text-align:left; float:left; margin-left:105px;  width:50px; }
+#buttons { margin-left: 280px; margin-top:20px; }
+#dates { margin-left: 130px; }
+#steptitle { font-size: 30px; font-weight: bold; margin-left:10px;}
+#circle { border-radius: 50%; width:50px; height:50px;} 
+.buttonStyle {
+    background-color: #4f5f86;
+    color: #c0c5cd;
+    border-radius: 2px;
+    margin-right: 3px;
+    margin-top:30px;
+}
+.stepbuttonStyle {
+	background-color:#4f5f86;
+	color:#c0c5cd; 
+	border-radius:10px; margin-right:3px; margin-top:3px;}
+
+div#ShceduleEdit {
+    margin-top: 10px;
+}
+#teamlistt{ text-align:center;    margin-bottom: 30px; font-weight:bold; font-size:20px; color:white; background-color:#525f83; width:100%; line-height:3}
+#btns {background-color:#fff; color:#929292; text-align:center; 
+width:100px;  margin-left:450px;  border:0px; height:30px; padding-top:3px;
+}
+#btns:hover { background-color:#929292; color:#fff; text-align:center; padding-top:3px;
+ width:100px; margin-left:450px;  border:0px; height:30px;}
+#btnss {background-color:#fff; color:#929292; text-align:center; 
+width:100px;  margin-left:450px; height:30px; padding-top:3px;
+}
+#btnss:hover { background-color:#929292; color:#fff; text-align:center; padding-top:3px;
+ width:100px; margin-left:450px; height:30px;}
+#teamonelist {  margin-left:30px; height:30px;}
+#teamonelistinput {margin-right:10px; border:3px solid #d5d5d5; border-radius:3px;}
+#projetstepbox {margin-left: 110px; overflow:hidden; }
+#enterstepname { float:left; margin-bottom: 20px; width:120px; margin-right:10px;}
+#buttonboundary {float:right; }
+#memberselectbtn {background-color:#fff; color:#929292; text-align:center; 
+width:100px;  margin-left:280px; border:0px; height:30px; padding-top:3px;}
+#memberselectbtn:hover {background-color:#929292; color:#fff; text-align:center; padding-top:3px;
+ width:100px; margin-left:280px; height:30px;}
+#stepManagerList {margin-left:30px; margin-bottom:20px; margin-right:10px;}
+#stepnameinput {float:left; border:3px solid #d5d5d5; border-radius:3px;}
+#findbtn {background-color:#fff; color:#929292; text-align:center; 
+width:50px;   border:0px; height:30px; padding-top:3px;}
+#findbtn:hover {background-color:#929292; color:#fff; text-align:center; padding-top:3px;
+ width:50px;  height:30px;}
+ #projectReqBoxx {border: 10px solid #c0c0c0; width: 540px;border-radius:20px; padding:15px;}
+
+#projectReqq {text-align:left; margin-left:30px; margin-bottom:10px; }
+/* 스텝 추가 */
+.plStep{
+	width:80%;
+	font-size:30px;
+	margin:auto;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+.scNtext{
+	width:400px;
+	height:35px;
+	padding-left:23px;
+	margin:auto;
+	margin-bottom:20px;
+	border:1px solid blue;
+	font-size:15px;
+	
+}.scNtext:focus{
+	outline: none;
+    border: 1px solid indigo;
+}
+
+.stepList{
+	border-top:2px solid black;
+	border-bottom:2px solid black;
+	width:90%;
+	margin:auto;
+}
+
+.stepHead{
+    border-bottom: 2px solid black;
+    margin-top: 28px;
+    height: 60px;
+    font-size:20px;
+    font-weight:bold;
+	
+}
+
+.stepTitle{
+	width:50%;
+	height:27px;
+	float:left;
+	font-size:15px;
+}/*.stLeft{border-right:1px solid black;}*/
+
+.stepTitle2{
+	font-weight:bold;
+	background-color:#4f5f86;
+	color:white;
+	height: 40px;
+    line-height: 2.2;
+}
+
+.stepContents{
+	width:100%;
+	height:27px;
+}
+
+.stepCreateBtn{
+	width:90%;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:10px;
+}
+
+.closePop{
+	margin:auto;
+	margin-bottom:20px;
+	margin-top:15px;
+	color:#bbbbbb;
+	font-size:15px;
+	font-weight:100;
+}
+
+.scList{
+	width:90%;
+	margin:auto;
+	border-top:2px solid black;
+	border-bottom:2px solid black;
+	margin-top:30px;
+}
+.scListHead{
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    font-weight: bold;
+    background-color: #4f5f86;
+    color: white;
+    line-height: 5.5;
+}
+
+.scListHeadText{
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.scListTitle{
+	width:100%;
+	height: 40px;
+	border-top:1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.scListConTitle{
+    text-align: center;
+    font-size: 15px;
+    color: darkblue;
+    font-weight: 600;
+    height: 39px;
+    float: left;
+    width: 50%;
+    line-height: 2.5;
+}
+.scListContentsHead{
+	width:90%;
+	height:30px;
+	margin:auto;
+	text-align: center;
+}
+
+.scListContents{
+	margin-left:16px;
+	width:48%;
+	height:30px;
+	float:left;
+	font-size:16px;
+}/*.scListContentsLeft{border-right:1px solid gray;}*/
+
+.scheScheLeader{
+	border-bottom:1px solid black;
+	
+}
+
+.scListConfirmContainer{
+	width:80%;
+	margin:auto;
+	margin-top:20px;
+	height:30px;
+}
+.scListConfirm{
+    width: 44.5%;
+    margin-right: 20px;
+    margin-left: 20px;
+    height:40px;
+    float: left;
+}
+.scButtonStyle{
+	background-color: #4f5f86;
+    color: #c0c5cd;
+    border-radius: 2px;
+}
+
+.scListBack{
+	color: gray;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+    margin-bottom: 20px;
+    width: 100%;
+	
+}
+.sendFeedDiv{
+	width:100%;
+	
+}
+
+.sendFeedHead{
+	width: 100%;
+    height: 80px;
+}
+
+.sendFeedHeadText{
+	font-size: 20px;
+    line-height: 4;
+}
+
+.feedArea{
+    width: 75%;
+    height: 150px;
+}
+
+.feedBtnArea{
+    width: 75%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.feBtnStyle{
+	width:100%;
+	height:35px;
+}
+
+.scheListDiv{
+	width:80%;
+	margin:auto;
+	margin-top:30px;
+	border-top:2px solid black;
+	border-bottom:2px solid black;
+	font-family:Sans-Serif;
+}
+
+.scheListLeader + label{
+    width: 100%;
+    text-align: center;
+    line-height: 3.5;
+    height: 60px;
+    border-bottom: 1px solid black;
+}
+
+.scheLeadListContent{
+	height:30px;
+	
+}
+
+.noneLeaderList{
+	text-align: center;
+    border-top: 1px solid black;
+    height: 100%;
+    line-height: 3.8;
+    color: grey;
+    font-size: 18px;
+}
+
+.scheListLeader:hover + label{
+	background-color:grey;
+}
+.scheListLeader:checked + label{
+	background-color:#4f5f86;
+	color:white;
+}
+
+.allLeadList{
+	border-top:2px solid black;
+	border-bottom:2px solid black;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.scheListLeader:hover:active + label{
+	background-color:#8e36e7;
+	color:white;
+}
+
+.scheListLeader{
+	display:none;
+}
+.scheListHead{
+	width:100%;
+	height:100px;
+}.scheListHeadText{
+	font-size:25px;
+	font-weight:bold;
+	line-height:3.9;
+	text-align:center;
+	border-bottom:2px solid gray;
+	height: 100%;
+}
+
+.scheListTitle{
+	width:100%;
+	height:30px;
+	margin:auto;
+}.scheNo{
+	width:20%;
+	height:100%;
+	float:left;
+	text-align:center;
+	line-height: 1.77;
+}.scheSche{
+	width:50%;
+	padding-left: 50px;
+	height:100%;
+	float:left;
+	text-align:center;
+	line-height: 1.77;
+}.shePro{
+	width:30%;
+	height:100%;
+	float:left;	
+	text-align:center;
+	line-height: 1.77;
+}
+
+.scheduleContents{
+	width:100%;
+	height: 30px;
+}
+
+.scheName{
+	text-align:left;
+	padding-left:24%;	
+}
+.scheImg{
+	height:25px;
+	float:right;
+}
+
+
+
+
+
+
+
+.rd {display:none;}
+
+#btnbtn {margin-top:10px; background-color:#929292; color:#fff;   text-align:center;  
+width:100px;  margin-left:275px; height:30px; padding-top:3px;
+}
+#btnbtn:hover { background-color:#fff; color:#929292; text-align:center; padding-top:3px;
+ width:100px; height:30px;}
+#feedcontents{margin-left:10px;  width:365px; height:250px; border-radius:4px; border: 3px solid grey;}
+
+#feedbackbtn { margin-left:120px; margin-right:8px; margin-top:20px; margin-bottom:15px;}
+#acceptbtn {margin-left: 20px; margin-right:8px;}
+
+ 
+#feedbackbtnmake {margin-top:10px; background-color:#929292; color:#fff;  text-align:center; 
+width:100px;  margin-left:275px; height:30px; padding-top:3px; border:0px;
+}
+#feedbackbtnmake:hover { background-color:#fff; color:#929292; text-align:center; padding-top:3px;
+ width:100px; height:30px;}
+#message {
+    text-align: center;
+    margin-top: 25%;
+    font-size: 16px;
+    margin-bottom: 150px;
+    color: grey;
+}
+#noprojectstep{font-size:15px; color:grey; text-align:center; margin:10%;}
+#searchbox {width:60%; margin-right:10px; line-height: 2;font-size:14px; border:2px solid grey; border-radius:3px;}
+#searchbtn {width:15%;  border:0px; line-height:160%;line-height: 2; border-radius:2px;  background-color:white; color:#929292;}
+#searchbtn:hover {background-color:#929292; color:white;}
+#searchpart {text-align:center; margin-bottom:7%;}
+
+#searchtitle{text-align:center; font-weight:bold; background-color:#929292; color:white; line-height:200%;}
+#searchlists{text-align:center;line-height:200%; width:100%;}
+.namesss {text-align:center; margin-right:20%; margin-left:10%; }
+#searchresult {margin-bottom:7%;}
+#projectPath {font-size:15px; color:grey;}
+
+#loginInfo,#welcome { color:grey; text-align:right;  font-size:15px;} 
+#loginInfo{border-bottom:1px solid;}
+
